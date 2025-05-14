@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="icon" href="logos/CultureCine.svg" type="image/svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureCine | Login</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .login-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+        }
+        .login-main-text {
+            text-align: center;
+            color: #fff;
+        }
+        .login-form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        .login-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to left, #1a1b1c, #333); /* Gradiente do canto direito para o canto esquerdo */
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-black {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .register-link {
+            display: block;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: underline;
+            font-size: 14px;
+            text-align: center;
+        }
+        /* Remove margens padrão do Bootstrap e outros elementos */
+        .row, .col-md-6, .col-sm-12 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="logos/CultureCine.svg" alt="CC" class="logo">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-6 col-sm-12 p-0">
+                <img src="Login/login.jpeg" alt="WandaVision" class="img-fluid login-image">
+            </div>
+            <div class="col-md-6 col-sm-12 login-column">
+                <div class="login-main-text">
+                    <h2>Login</h2>
+                    <p>Entre ou cadastre-se para acessar a CultureCine</p>
+                </div>
+                <div class="login-form">
+                    <form>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="text" class="form-control" placeholder="Insira seu e-mail:">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input type="password" class="form-control" placeholder="Insira sua senha:">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-black" onclick="window.location.href='culturecine4.html'">Entrar</button>
+                        </div>
+                        <a href="culturecine3.html" class="register-link">Ainda não é assinante CultureCine? Assine agora!</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

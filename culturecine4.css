@@ -1,0 +1,10 @@
+.profile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile a:focus, 
+.profile a:active {
+    outline: none;
+    box-shadow: none;
+}

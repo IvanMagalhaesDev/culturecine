@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureCine | Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="logos/CultureCine.svg" type="image/svg">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+    <style>
+        body {
+            background-color: #0F171E;
+            color: white;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255,255,255,.75);
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #007bff;
+        }
+        .highlight img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: #1A242F;
+            border: none;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease; /* Adiciona transição para o efeito de profundidade */
+        }
+        .card:hover {
+            transform: translateY(-10px); /* Efeito de profundidade ao passar o mouse */
+        }
+        .card img {
+            width: 100%;
+            height: 170px; /* Altura consistente para todas as imagens */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card .live-image {
+            object-position: top; /* Ajusta a posição da imagem para cima */
+        }
+        .prime-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px;
+            font-size: 0.8rem;
+            color: white;
+            border-radius: 4px;
+        }
+        .cine-tag, .original-tag {
+            background-color: #00A8E1; /* Azul */
+        }
+        .live-tag {
+            background-color: #FF007F; /* Rosa choque próximo ao vermelho */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="logos/CultureCine.svg" alt="CC" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Séries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Infantis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Minha área</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configurações</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="highlight" data-aos="fade-up">
+        <img src="Página Inicial/tlou.webp" alt="Banner Principal">
+    </div>
+
+    <h2 class="section-title" data-aos="fade-right">Em destaque</h2>
+    <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="Página Inicial/game of thrones.jpg" alt="Destaque 1" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="Página Inicial/friends.jpg" alt="Destaque 2" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="Página Inicial/clube da luta.png" alt="Destaque 3" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="Página Inicial/Euphoria.png" alt="Destaque 4" class="card-img-top">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" data-aos="fade-right">Assista a seguir</h2>
+    <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag cine-tag">Cine</span>
+                <img src="Página Inicial/LaLa Land.jpg" alt="Assista 1" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag cine-tag">Cine</span>
+                <img src="Página Inicial/Tudo em Todo Lugar ao Mesmo Tempo.png" alt="Assista 2" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag cine-tag">Cine</span>
+                <a href="culturecine6.html">
+                    <img src="Página Inicial/oppenheimer.jpeg" alt="Assista 3" class="card-img-top">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag cine-tag">Cine</span>
+                <img src="Página Inicial/joker.jpg" alt="Assista 4" class="card-img-top">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" data-aos="fade-right">CultureCine Originals</h2>
+    <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Original</span>
+                <img src="Página Inicial/wandavision.jpg" alt="Original 1" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Original</span>
+                <img src="Página Inicial/loki.jpg" alt="Original 2" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Original</span>
+                <img src="Página Inicial/x-men '97.webp" alt="Original 3" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Original</span>
+                <img src="Página Inicial/demolidor.webp" alt="Original 4" class="card-img-top">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" data-aos="fade-right">Esportes Ao Vivo</h2>
+    <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag live-tag">Ao Vivo</span>
+                <img src="Página Inicial/jogo 1.png" alt="Esporte 1" class="card-img-top live-image">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag live-tag">Ao Vivo</span>
+                <img src="Página Inicial/jogo 2.png" alt="Esporte 2" class="card-img-top live-image">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag live-tag">Ao Vivo</span>
+                <img src="Página Inicial/jogo 3.png" alt="Esporte 3" class="card-img-top live-image">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag live-tag">Ao Vivo</span>
+                <img src="Página Inicial/jogo 4.png" alt="Esporte 4" class="card-img-top live-image">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" data-aos="fade-right">Assista Novamente</h2>
+    <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Reprise</span>
+                <img src="Página Inicial/reprise.png" alt="Original 1" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Cine</span>
+                <img src="Página Inicial/eternals.webp" alt="Original 2" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Cine</span>
+                <img src="Página Inicial/stranger things.webp" alt="Original 3" class="card-img-top">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <span class="prime-tag original-tag">Cine</span>
+                <img src="Página Inicial/the mandalorian.jpeg" alt="Original 4" class="card-img-top">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

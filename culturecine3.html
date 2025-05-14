@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureCine | Cadastro</title>
+    <link rel="icon" href="logos/CultureCine.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .register-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+        }
+        .register-main-text {
+            text-align: center;
+            color: #fff;
+        }
+        .register-form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        .register-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to left, #1a1b1c, #333);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-black {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .login-link {
+            display: block;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: underline;
+            font-size: 14px;
+            text-align: center;
+        }
+        .row, .col-md-6, .col-sm-12 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="logos/CultureCine.svg" alt="CultureCine Logo" class="logo">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-6 col-sm-12 p-0">
+                <img src="Login/loki.jpeg" alt="Loki" class="img-fluid register-image">
+            </div>
+            <div class="col-md-6 col-sm-12 register-column">
+                <div class="register-main-text">
+                    <h2>Cadastro</h2>
+                    <p>Comece agora a sua assinatura e aproveite o melhor do conteúdo CultureCine.</p>
+                </div>
+                <div class="register-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Nome do Assinante (completo)</label>
+                            <input class="form-control" type="text" name="name" placeholder="Insira seu nome:">
+                        </div>
+                        <div class="form-group">
+                            <label>Dados do Cartão</label>
+                            <input class="form-control" type="text" name="company" placeholder="000000-0">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input class="form-control" type="email" name="email" placeholder="Insira seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input class="form-control" type="password" name="password" placeholder="Insira sua senha">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-black" onclick="window.location.href='culturecine2.html'">Cadastre-se</button>
+                        </div>
+                    </form>
+                    <a href="culturecine2.html" class="login-link">Já tem uma conta? Faça login aqui!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureCine | Quem está assistindo?</title>
+    <link rel="icon" href="logos/CultureCine.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background: linear-gradient(to left, #1a1b1c, #333); /* Fundo com cor especificada */
+            color: #fff; /* Cor do texto */
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px;
+            text-align: center;
+            position: relative; /* Necessário para o círculo cinza */
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #f8f9fa;
+            transition: transform 0.3s ease, border 0.3s ease; /* Adiciona uma transição suave */
+        }
+        .profile:hover img {
+            transform: scale(1.1); /* Aumenta a imagem em 10% */
+            border: 4px solid red; /* Adiciona uma borda vermelha */
+        }
+        .profile:hover::before {
+            content: '';
+            position: absolute;
+            width: 170px; /* Ligeiramente maior que a imagem para criar o círculo ao redor */
+            height: 170px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2); /* Círculo cinza translúcido */
+            z-index: -1; /* Coloca o círculo atrás da imagem */
+        }
+        .profile-name {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #fff;
+            min-width: 180px; /* Baseado no maior nome de perfil */
+        }
+        .profile a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .profile a:focus, 
+        .profile a:active {
+            outline: none;
+            box-shadow: none;
+        }
+        .edit-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #fff;
+            border-color: #fff;
+        }
+        .add-button {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<img src="logos/CultureCine.svg" alt="CultureCine Logo" class="logo"> <!-- Adiciona a logo -->
+
+<div class="container">
+    <h1>Selecione seu Perfil</h1>
+    <div class="profile-container">
+        <div class="profile">
+            <a href="culturecine5.html">
+                <img src="Perfis/Ivan.jpg" alt="Ivan">
+                <div class="profile-name">Ivan "o terrível"</div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="culturecine5.html">
+                <img src="Perfis/Michael.webp" alt="Michael">
+                <div class="profile-name">Michael Andarilho das Estrelas</div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="culturecine5.html">
+                <img src="Perfis/Yan.jpg" alt="Yan">
+                <div class="profile-name">Uan Ychôa</div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="culturecine5.html">
+                <img src="Perfis/Rafael.jpg" alt="Rafael">
+                <div class="profile-name">Rafael</div>
+            </a>
+        </div>
+    </div>
+
+    <button class="btn btn-primary add-button">Adicionar Perfil</button>
+</div>
+
+<button class="btn btn-secondary edit-button">Editar Perfil</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
